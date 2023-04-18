@@ -21,7 +21,7 @@ img{
 
 @media only screen and (max-width: 600px){
 	body{
-		margin-top: 45vh;
+		margin-top: 40vh;
 		font-size:  8vw;
 	}
 	#img{
