@@ -18,3 +18,21 @@ img{
 	width: 15%;
 
 }
+
+@media only screen and (max-width: 600px){
+	body{
+		margin-top: 50vh;
+		font-size:  8vw;
+	}
+	#img{
+		margin-top: 0;
+		margin-right:auto;
+		margin-left: auto;
+		text-align: left;
+		justify-content: left;
+	}
+	img{
+	width: 35%;
+
+}
+}

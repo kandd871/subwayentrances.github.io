@@ -30,7 +30,7 @@ array.forEach((item, index) => {
   container.appendChild(anchor);
 
   // generate a random number of empty circles to insert after each colored circle
-  const numEmptyCircles = Math.floor(Math.random() * 4);
+  const numEmptyCircles = Math.floor(Math.random() * 3.25);
   for (let i = 0; i < numEmptyCircles; i++) {
     const emptyCircle = document.createElement("div");
     emptyCircle.classList.add("empty-circle");
