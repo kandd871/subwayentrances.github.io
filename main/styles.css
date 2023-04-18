@@ -1,0 +1,62 @@
+body {
+  background-color: black;
+  font-family: helvetica;
+  font-weight: 900;
+  font-size: 6.25vw;
+}
+
+.box{
+	margin: 2vw;
+}
+
+.container{
+	display: flex;
+	flex-wrap: wrap;
+	
+}
+
+.circle, .empty-circle {
+  border-radius: 100%;
+  padding: 4.5vw;
+  color: white;
+  display: flex;
+  align-items: center; /* centers vertically */
+  justify-content: center; /* centers horizontally */
+  width: 10px;
+  height: 10px;
+  position: relative;
+  text-align: center;
+  margin: 1vw;
+}
+
+a{
+	text-decoration: none;
+}
+
+.circle: hover{
+	cursor: pointer;
+}
+
+.empty-circle:hover{
+	opacity: 0;
+}
+
+#hide{
+	text-decoration: none;
+	border: 0.5px solid white;
+	 padding: .5vw; 
+	 font-size: 1vw;
+	 color: white;
+	background-color: black;
+}
+
+#hide:hover{
+	cursor: pointer;
+	text-decoration: underline;
+}
+
+.hide{
+justify-content: right;
+ display: flex;
+ margin: vw;
+}
