@@ -7,14 +7,16 @@ body {
 
 .box{
 	margin: 2vw;
+	margin-top: -2vh;
 	display: block;
-		justify-content: center;
+	justify-content: center;
 }
 
 .container{
 	display: flex;
 	flex-wrap: wrap;
-/**/
+	text-align: left!important;
+/*	justify-content: center;*/
 }
 
 .circle, .empty-circle {
@@ -27,7 +29,6 @@ body {
   width: 10px;
   height: 10px;
   position: relative;
-  text-align: left!important;
   margin: 1vw;
 }
 
@@ -50,7 +51,6 @@ a{
 	 font-size: 1vw;
 	 color: white;
 	background-color: black;
-	margin-bottom: 1vh;
 }
 
 #hide:hover{
@@ -59,11 +59,22 @@ a{
 }
 
 .hide{
-justify-content: right;
- display: flex;
- margin: vw;
+display: flex;
 }
 
+.buttons{
+	justify-content: space-between;
+	display: inline-flex;
+	width:  100%;
+	align-items: center;
+	margin-bottom: 2vh;
+}
+
+img{
+width: 7.5%;
+transform: rotate(-90deg);
+display: flex;
+}
 
 @media only screen and (max-width: 600px){
 	.circle, .empty-circle{
@@ -74,7 +85,14 @@ justify-content: right;
 
 	#hide{
 		font-size: 4vw;
-		margin-bottom: 2vh;
 		padding: 1vw; 
+	}
+	.box{
+		margin-top: 2vh;
+			margin-bottom: 2vh;
+	}
+
+	img{
+		width: 6%;
 	}
 }
