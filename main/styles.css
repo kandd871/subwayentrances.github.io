@@ -3,6 +3,8 @@ body {
   font-family: helvetica;
   font-weight: 900;
   font-size: 6.25vw;
+  margin: 0;
+  text-align: center;
 }
 
 .box{
@@ -14,9 +16,19 @@ body {
 
 .container{
 	display: flex;
+	margin: -1vw;
 	flex-wrap: wrap;
 	text-align: left!important;
+	margin-top: 1vh;
 /*	justify-content: center;*/
+}
+
+.text{
+	color: white;
+	font-size: 6vw;
+	display: flex;
+	margin-bottom: 2vh;
+	text-align: left!important;
 }
 
 .circle, .empty-circle {
@@ -48,6 +60,7 @@ a{
 	text-decoration: none;
 	border: 0.5px solid white;
 	 padding: .5vw; 
+	 display: flex;
 	 font-size: 1vw;
 	 color: white;
 	background-color: black;
@@ -67,7 +80,7 @@ display: flex;
 	display: inline-flex;
 	width:  100%;
 	align-items: center;
-	margin-bottom: 2vh;
+	margin-bottom: 0vh;
 }
 
 img{
@@ -84,12 +97,16 @@ display: flex;
 	}
 
 	#hide{
-		font-size: 4vw;
+		font-size: 3.5vw;
 		padding: 1vw; 
 	}
 	.box{
 		margin-top: 2vh;
 			margin-bottom: 2vh;
+	}
+
+	.text{
+		font-size: 12vw;
 	}
 
 	img{
