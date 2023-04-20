@@ -20,7 +20,7 @@ fetch(url)
           entrancesDOM += `
           <div class="container">
           <div>${(entrance.name)} (${entrance.line})</div>
-        <div class="loco"><a href="https://www.google.com/maps/search/${secondValue},+${firstValue}">take me here</a></div>
+        <div class="loco"><a target="_blank" href="https://www.google.com/maps/search/${secondValue},+${firstValue}">take me here</a></div>
         </div>
         `;
         }
