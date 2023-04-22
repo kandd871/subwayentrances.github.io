@@ -2,21 +2,31 @@ body{
 	background-color: #FF1E46;
 	font-family: helvetica;
   font-weight: 900;
-  font-size: 6.25vw;
   margin: 0;
+  margin-top: 20vh;
   text-align: left;
   color: white;
 }
 
+.box{
+  display: inline-flex;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  background-color: #FF1E46;
+  z-index: 100;
+}
+
+
 .container{
-	display: inline-flex;
+	display: flex;
 	align-items: center;
+/*  justify-content: space-between;*/
 }
 
 .circle{
   border-radius: 100%;
-  padding: 4.5vw;
-  color: white;
+  padding: 4.25vw;
   display: flex;
   align-items: center; /* centers vertically */
   justify-content: center; /* centers horizontally */
@@ -26,28 +36,82 @@ body{
   position: relative;
   margin: 1vw;
   background-color: white;
+  font-size: 6.25vw;
 }
+
+.lines{
+  border-radius: 100%;
+  z-index: 90;
+  padding: 1.5vw;
+  display: inline-flex;
+  align-items: center; /* centers vertically */
+  justify-content: center; /* centers horizontally */
+  width: 1px;
+  height: 1px;
+  position: relative;
+  margin: .35vw;
+  border: 1px solid white;
+  font-size: 1.5vw;
+  color: white;
+}
+
+.lines:hover{
+  color: #FF1E46;
+  background-color: white!important;
+}
+
+
+.street{
+  display: flex;
+}
+
 
 .text{
 	display: flex;
+  font-size: 6.25vw;
+  margin-right: 1.25vw;
 }
 
 #entrances{
-  font-size: 2.5vw;
+  font-size: 2vw;
   margin: 1vw;
 }
 
-a{
+.exit > a{
+  text-decoration: none;
+  color: white;
+}
+
+.loco > a{
   /*text-decoration: none;*/
   color: white;
   font-size: 1vw;
 }
 
-.container{
-  display: inline-flex;
-  justify-content: space-between;
+.exit{
+  font-size: 3vw;
+  background-color: red;
+  padding:  0.1vw;
+  color: white;
+  border: 1px solid white;
 }
 
+.exit > a:hover{
+  background-color: white;
+  color: red;
+}
+/*
+.exit:hover{
+  background-color: white;
+  color: red;
+}
+
+*/
+@media only screen and (max-width: 700px){
+  body{
+    margin-top: 10vh;
+  }
+}
 
 
 
