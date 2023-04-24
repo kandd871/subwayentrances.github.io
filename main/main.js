@@ -46,7 +46,7 @@ hideButton.addEventListener("click", () => {
   hideEmptyCircles = !hideEmptyCircles;
   const emptyCircles = document.querySelectorAll(".empty-circle");
   emptyCircles.forEach((emptyCircle) => {
-    emptyCircle.style.visibility = hideEmptyCircles ? "hidden" : "visible";
+    emptyCircle.style.display = hideEmptyCircles ? "none" : "flex";
   });
   hideButton.textContent = hideEmptyCircles ? "show" : "hide";
 });
