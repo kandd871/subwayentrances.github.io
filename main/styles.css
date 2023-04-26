@@ -89,6 +89,10 @@ transform: rotate(-90deg);
 display: flex;
 }
 
+img:hover{
+	transform: rotate(-45deg);
+}
+
 @media only screen and (max-width: 600px){
 	.circle, .empty-circle{
 		width: 40px;

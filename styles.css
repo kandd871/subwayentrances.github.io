@@ -19,6 +19,10 @@ img{
 
 }
 
+img:hover{
+	transform: rotate(45deg);
+}
+
 @media only screen and (max-width: 600px){
 	body{
 		margin-top: 40vh;
