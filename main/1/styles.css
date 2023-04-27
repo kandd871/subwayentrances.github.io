@@ -93,7 +93,7 @@ padding: 4.175vw;
 }
 
 button{
-  background-color: #FF1E46;
+  background-color: transparent;
   border: none;
   text-align: center!important;
   font-family: helvetica;
@@ -272,11 +272,9 @@ img:hover{
     font-size: 3vw;
     margin-top:vh;
     padding: 2.5vw;
+    width: ;
   }
-  .name{
-    font-size: 5vw;
-    white-space: nowrap;
-  }
+
 
 .mark:before {
   width: 100%;
@@ -303,7 +301,12 @@ img{
   display: block;
   padding-top: 1vh;
   padding-bottom: 1vh;
+  width: 100%;
 }
+.name{
+    font-size: 5vw;
+    width: 75%;
+  }
 .path:before{
   top: 28.5%;
 }
