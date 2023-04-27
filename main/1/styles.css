@@ -320,6 +320,10 @@ img{
 .lines>a{
   text-decoration: none;
 }
+/*.path:last-child {
+  height: 14vh;
+}*/
+
 }
 
 @media only screen and (max-width: 1000px){
