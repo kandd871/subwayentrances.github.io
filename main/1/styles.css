@@ -269,9 +269,9 @@ img:hover{
   font-size: 3.5vw;
   }
   .lines{
-    font-size: 3vw;
+    font-size: 3.5vw;
     margin-top:vh;
-    padding: 2.5vw;
+    padding: 3vw;
     width: ;
   }
 
@@ -287,7 +287,8 @@ img:hover{
 }
 .path{
   width: 8.5vw;
-  height: 13vh;
+  height: 15vh;
+  margin-bottom: 0;
   margin-left: 1.75vw;
   margin-right: 3vw;
 }
@@ -304,11 +305,15 @@ img{
   width: 100%;
 }
 .name{
-    font-size: 5vw;
-    width: 75%;
+    font-size: 5.5vw;
+    width: 80%;
   }
 .path:before{
   top: 28.5%;
+}
+.street{
+  flex-wrap: wrap;
+  width: 75%;
 }
 .lines>a{
   text-decoration: none;
