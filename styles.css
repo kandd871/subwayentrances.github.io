@@ -5,12 +5,13 @@ body{
 	font-size:  7vw;
 	margin-top: -7vh;
 	margin-left: 6vw;
+	line-height: 25vh;
 }
 #img{
 	align-content: right;
 	text-align: right;
 	display: block;
-	margin-top: -20vh;
+	margin-top: -12vh;
 	margin-right:  6vw;
 }
 
@@ -27,6 +28,7 @@ img:hover{
 	body{
 		margin-top: 40vh;
 		font-size:  8vw;
+		line-height: 12vh;
 	}
 	#img{
 		margin-top: 0;
@@ -36,7 +38,7 @@ img:hover{
 		justify-content: left;
 	}
 	img{
-	width: 35%;
+	width: 32%;
 
 }
 }

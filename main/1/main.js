@@ -39,6 +39,9 @@ fetch(url)
   btncircle.addEventListener("mouseout", () => {
     btncircle.style.backgroundColor = colorMap[item];
     btncircle.style.color = "white";
+    if (colorMap[item] === "#FFDA16") {
+    btncircle.style.color = "black";
+  }
   });
 
   // create anchor tag and append the circle to it

@@ -44,9 +44,12 @@ padding: 4.175vw;
   border: 1px solid white;
   width: 100%;
   height: 100%;
-  margin-bottom: 1vh;
+  margin-bottom: 3vh;
 }
 
+.container:hover{
+  border: 3px solid white;
+}
 
 .boxcontent{
   display: flex;
@@ -217,33 +220,90 @@ img:hover{
 }
 
 .path{
-  width: 11vw;
-  height: 13.75vh;
-  margin-right: 1vw;
+  width: 7.25vw;
+  height: 16.5vh;
+  margin-left: 1.25vw;
+  margin-right: 1.75vw;
 /*  display: flex;*/
   background-color: white;
   position: relative;
 }
 
 
-
 .path:before {
   content: "";
   position: absolute; /* add this */
-  top: 45%; /* add this */
+  top: 40%; /* add this */
   left: 50%; /* add this */
   transform: translate(-50%, -50%); /* add this */
   display: block;
-  width: 50%;
-  padding-top: 50%;
+  width: 70%;
+  padding-top: 70%;
   border-radius: 50%;
   background-color: #FF1E46;
 }
 
 @media only screen and (max-width: 700px){
   body{
-    margin-top: 10vh;
+    margin-top: 20vh;
   }
+  .btn{
+    font-size: 3vw;
+    width: 25px;
+    height: 25px;
+    margin-bottom: 0.5vh;
+    margin-right: -1vw;
+  }
+
+  .filters{
+    width: 85%;
+    justify-content: right;
+    margin-right: 1vw;
+  }
+  .text{
+    font-size: 6vw;
+    margin-right: 2vw;
+  }
+  .exit{
+  font-size: 3.5vw;
+  }
+  .lines{
+    font-size: 3vw;
+    margin-top:vh;
+    padding: 2.5vw;
+  }
+  .name{
+    font-size: 4vw;
+    white-space: nowrap;
+  }
+
+.mark:before {
+  width: 100%;
+  margin: 0;
+  padding-top: 2%;
+}
+.container{
+  margin-bottom: 2vh;
+  margin-right: 1vw;
+}
+.path{
+  width: 8.5vw;
+  height: 13vh;
+  margin-left: 1.75vw;
+  margin-right: 3vw;
+}
+img{
+  width: 5vh;
+}
+.header{
+  padding-bottom: 3vh;
+}
+.info{
+  display: block;
+}
+.path:before{
+  top: 28.5%;
+}
 }
 
 
