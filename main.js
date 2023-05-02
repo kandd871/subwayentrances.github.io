@@ -1,5 +1,7 @@
 const color = ["#B1BECB","#0500FF", "#FF6B00", "#FFDA16", "#874100", "#5F5A69", "#FF1E46", "#008736", "#FF00D0"]
 const titles = document.querySelectorAll(".title")
+const img = document.getElementById("img");
+
 
 titles.forEach((title, index) => {
   const characters = title.outerText.split("");
@@ -49,4 +51,8 @@ titles.forEach((title, index) => {
     //   circle.style.border = ".25vw solid transparent";
     // });
   });
+
 });
+
+
+

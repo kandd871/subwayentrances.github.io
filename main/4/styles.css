@@ -1,5 +1,10 @@
+:root {
+  --color: #008736;
+}
+
+
 body{
-	background-color: #FF1E46;
+	background-color: var(--color);
 	font-family: helvetica;
   font-weight: 900;
   margin: 0;
@@ -12,21 +17,21 @@ body{
 .header{
  position: fixed; 
   top: 0;
-  background-color: #FF1E46;
+  width: 100%;
+  background-color: var(--color);
   z-index: 100;
   padding-bottom: 4vh;
-  width: 100%;
   border-bottom: 2px solid white;
 /*  border: 1px solid white;*/
 }
 
 .circle >a{
   text-decoration: none;
-  color: #FF1E46;
+  color: var(--color);
 }
 
 .circle:hover{
-background-color: #FF1E46;
+background-color: var(--color);
 color: white;
 border: 1px solid white;
 padding: 4.175vw;
@@ -39,6 +44,7 @@ padding: 4.175vw;
 .box{
   display: inline-flex;
   align-items: center;
+  width: 100%;
 }
 
 .container{
@@ -61,6 +67,10 @@ padding: 4.175vw;
   justify-content: space-between;
    box-sizing: border-box;
 }
+
+/*.space{
+  width: 5%;
+}*/
 
 .mark:before {
   content: "";
@@ -91,7 +101,7 @@ padding: 4.175vw;
   position: relative;
   margin: auto;
   text-align: right!important; 
-/*  margin-right: 1vw;*/
+  margin-right: 1vw;
 }
 
 button{
@@ -114,7 +124,7 @@ button:hover{
   justify-content: center; /* centers horizontally */
   width: 10px;
   height: 10px;
-  color: #FF1E46;
+  color: var(--color);
   position: relative;
   margin: 1vw;
   background-color: white;
@@ -138,7 +148,7 @@ button:hover{
 }
 
 .lines:hover{
-  color: #FF1E46;
+  color: var(--color);
   background-color: white!important;
 }
 
@@ -151,7 +161,8 @@ button:hover{
 .text{
 	display: flex;
   font-size: 6.25vw;
-  margin-right: 1.25vw;
+  margin-right: 2.25vw;
+/*  margin-right: 28.6%;*/
 }
 
 .info{
@@ -243,7 +254,7 @@ img:hover{
   width: 70%;
   padding-top: 70%;
   border-radius: 50%;
-  background-color: #FF1E46;
+  background-color: var(--color);
 }
 
 
@@ -258,15 +269,16 @@ img:hover{
   }
   .path{
   width: 8.5vw;
-  height: 23vh;
+  height: 17vh;
   margin-bottom: -3vh;
   margin-left: 1.75vw;
   margin-right: 3vw;
 }
+
 .filters{
-    width:  93%;
+    width: 93%;
     justify-content: left!important;
-    margin-right: 2vw;
+    margin-right: 1.5vw;
   }
   .text{
     font-size: 6vw;
@@ -292,6 +304,13 @@ img:hover{
 .container{
   margin-bottom: 2vh;
   margin-right: 1vw;
+}
+.path{
+  width: 8.5vw;
+  height: 27vh;
+  margin-bottom: -2.5vh;
+  margin-left: 1.75vw;
+  margin-right: 3vw;
 }
 img{
   width: 7vh;
@@ -322,8 +341,8 @@ img{
 /*.path:last-child {
   height: 14vh;
 }*/
-}
 
+}
 
 @media only screen and (max-width: 700px){
   body{
@@ -335,16 +354,19 @@ img{
     width: 25px;
     height: 25px;
     margin-bottom: 1vh;
+    margin-right: ;
   }
 
-  .path{
+.path{
   width: 8.5vw;
-  height: 22vh;
+  height: 26vh;
   margin-bottom: -2.5vh;
   margin-left: 1.75vw;
   margin-right: 3vw;
 }
-
+  
 }
+
+
 
 

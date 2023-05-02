@@ -6,6 +6,8 @@ body{
 	margin-top: -5vh;
 	margin-left: 5vw;
 	line-height: 25vh;
+/*	transition: 10s;*/
+	position: relative;
 }
 
 #img{
@@ -80,6 +82,16 @@ img:hover{
 		margin-bottom: -6.5vh;
 	}
 }
+
+@keyframes move{
+from{
+	
+}
+to{
+	
+}
+}
+
 
 @media only screen and (max-width: 450px){
 	body{

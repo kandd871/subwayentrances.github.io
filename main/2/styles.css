@@ -1,9 +1,14 @@
+:root {
+  --color: #FF1E46;
+}
+
+
 body{
-	background-color: #FF1E46;
+	background-color: var(--color);
 	font-family: helvetica;
   font-weight: 900;
   margin: 0;
-  margin-top: 35vh;
+  margin-top: 32vh;
   text-align: left;
   color: white;
 }
@@ -12,21 +17,20 @@ body{
 .header{
  position: fixed; 
   top: 0;
-  background-color: #FF1E46;
+  width: 100%;
+  background-color: var(--color);
   z-index: 100;
   padding-bottom: 4vh;
-  width: 100%;
-  border-bottom: 2px solid white;
 /*  border: 1px solid white;*/
 }
 
 .circle >a{
   text-decoration: none;
-  color: #FF1E46;
+  color: var(--color);
 }
 
 .circle:hover{
-background-color: #FF1E46;
+background-color: var(--color);
 color: white;
 border: 1px solid white;
 padding: 4.175vw;
@@ -39,6 +43,7 @@ padding: 4.175vw;
 .box{
   display: inline-flex;
   align-items: center;
+  width: 100%;
 }
 
 .container{
@@ -61,6 +66,10 @@ padding: 4.175vw;
   justify-content: space-between;
    box-sizing: border-box;
 }
+
+/*.space{
+  width: 5%;
+}*/
 
 .mark:before {
   content: "";
@@ -91,7 +100,7 @@ padding: 4.175vw;
   position: relative;
   margin: auto;
   text-align: right!important; 
-/*  margin-right: 1vw;*/
+  margin-right: 1vw;
 }
 
 button{
@@ -114,7 +123,7 @@ button:hover{
   justify-content: center; /* centers horizontally */
   width: 10px;
   height: 10px;
-  color: #FF1E46;
+  color: var(--color);
   position: relative;
   margin: 1vw;
   background-color: white;
@@ -138,7 +147,7 @@ button:hover{
 }
 
 .lines:hover{
-  color: #FF1E46;
+  color: var(--color);
   background-color: white!important;
 }
 
@@ -151,7 +160,7 @@ button:hover{
 .text{
 	display: flex;
   font-size: 6.25vw;
-  margin-right: 1.25vw;
+  margin-right: 28.6%;
 }
 
 .info{
@@ -243,30 +252,26 @@ img:hover{
   width: 70%;
   padding-top: 70%;
   border-radius: 50%;
-  background-color: #FF1E46;
+  background-color: var(--color);
 }
 
-
-@media only screen and (max-width: 1000px){
+@media only screen and (max-width: 700px){
   body{
-    margin-top: 34vh;
+    margin-top: 25vh;
   }
   .btn{
+    font-size: 4.75vw;
+    padding: 1.25vw;
+    width: 25px;
+    height: 25px;
     margin-bottom: 1vh;
-    font-size: 4.75;
-    margin-right: -.75vw;
+    margin-right: -2vw;
   }
-  .path{
-  width: 8.5vw;
-  height: 23vh;
-  margin-bottom: -3vh;
-  margin-left: 1.75vw;
-  margin-right: 3vw;
-}
-.filters{
-    width:  93%;
+
+  .filters{
+    width: 93%;
     justify-content: left!important;
-    margin-right: 2vw;
+    margin-right: 1.5vw;
   }
   .text{
     font-size: 6vw;
@@ -292,6 +297,13 @@ img:hover{
 .container{
   margin-bottom: 2vh;
   margin-right: 1vw;
+}
+.path{
+  width: 8.5vw;
+  height: 17vh;
+  margin-bottom: -2.5vh;
+  margin-left: 1.75vw;
+  margin-right: 3vw;
 }
 img{
   width: 7vh;
@@ -322,29 +334,26 @@ img{
 /*.path:last-child {
   height: 14vh;
 }*/
+
 }
 
-
-@media only screen and (max-width: 700px){
+@media only screen and (max-width: 1000px){
   body{
-    margin-top: 32vh;
+    margin-top: 30vh;
   }
   .btn{
-    font-size: 4.75vw;
-    padding: 1.25vw;
-    width: 25px;
-    height: 25px;
     margin-bottom: 1vh;
+    font-size: 4.75;
+    margin-right: -.75vw;
   }
-
   .path{
   width: 8.5vw;
-  height: 22vh;
-  margin-bottom: -2.5vh;
+  height: 23vh;
+  margin-bottom: -3vh;
   margin-left: 1.75vw;
   margin-right: 3vw;
 }
-
 }
+
 
 
