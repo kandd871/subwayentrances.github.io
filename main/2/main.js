@@ -159,6 +159,7 @@ circle.addEventListener("mouseout", () => {
   entrancesDOM += `
   <div class="body">
   <div class="path"><div class="spot"></div></div>
+  <div class="container-wrapper">
   <div class="container">
   <div class="mark"></div>
   <div class="boxcontent">
@@ -167,6 +168,7 @@ circle.addEventListener("mouseout", () => {
   <div class="street">${lineDiv.innerHTML}</div>
   </div>
   <div class="location"><a target="_blank" href="https://www.google.com/maps/search/${secondValue},+${firstValue}"><img src="arrow.png"></a>
+  </div>
   </div>
   </div>
   </div>

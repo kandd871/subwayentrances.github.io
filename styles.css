@@ -5,7 +5,7 @@ body{
 	font-size:  6.75vw;
 	margin-top: -5vh;
 	margin-left: 5vw;
-	line-height: 25vh;
+	line-height: 23vh;
 /*	transition: 10s;*/
 	position: relative;
 }
@@ -37,8 +37,8 @@ img:hover{
 
 .circle {
   display: inline-block;
-  width: 1em;
-  height: 1em;
+  width: 1.05em;
+  height: 1.05em;
   border-radius: 50%;
   text-align: center;
   vertical-align: center;

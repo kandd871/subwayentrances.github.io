@@ -1,32 +1,39 @@
+:root {
+  --color: #FF1E46;
+}
+
+
 body{
-	background-color: #FF1E46;
-	font-family: helvetica;
+  background-color: var(--color);
+  font-family: helvetica;
   font-weight: 900;
   margin: 0;
-  margin-top: 35vh;
+  margin-top: 46vh;
   text-align: left;
   color: white;
 }
 
 
 .header{
+   margin-top: 0 !important;
  position: fixed; 
   top: 0;
-  background-color: #FF1E46;
+  background-color: var(--color);
   z-index: 100;
   padding-bottom: 4vh;
   width: 100%;
   border-bottom: 2px solid white;
+  padding-top: 1vh;
 /*  border: 1px solid white;*/
 }
 
 .circle >a{
   text-decoration: none;
-  color: #FF1E46;
+  color: var(--color);
 }
 
 .circle:hover{
-background-color: #FF1E46;
+background-color: var(--color);
 color: white;
 border: 1px solid white;
 padding: 4.175vw;
@@ -41,13 +48,22 @@ padding: 4.175vw;
   align-items: center;
 }
 
+
+.container-wrapper {
+  display: flex;
+  margin-right: 1vw;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+}
 .container{
   align-items: center;
   border: 1px solid white;
   width: 100%;
   height: 100%;
-  margin-bottom: 3vh;
+  margin-bottom: 4vh;
 }
+
 
 .container:hover{
   border: 3px solid white;
@@ -82,6 +98,7 @@ padding: 4.175vw;
   border: 1px solid white;
   text-align: center!important; 
   justify-content: center;
+  background-color: transparent;
 }
 
 
@@ -89,9 +106,8 @@ padding: 4.175vw;
   display: block;
   justify-content: center;
   position: relative;
-  margin: auto;
-  text-align: right!important; 
-/*  margin-right: 1vw;*/
+  margin: 0 auto;
+  margin-left: 11.5vw;
 }
 
 button{
@@ -114,7 +130,7 @@ button:hover{
   justify-content: center; /* centers horizontally */
   width: 10px;
   height: 10px;
-  color: #FF1E46;
+  color: var(--color);
   position: relative;
   margin: 1vw;
   background-color: white;
@@ -135,10 +151,11 @@ button:hover{
   border: 1px solid white;
   font-size: 1.5vw;
   color: white;
+  text-decoration: none;
 }
 
 .lines:hover{
-  color: #FF1E46;
+  color: var(--color)!important;
   background-color: white!important;
 }
 
@@ -149,7 +166,7 @@ button:hover{
 
 
 .text{
-	display: flex;
+  display: flex;
   font-size: 6.25vw;
   margin-right: 1.25vw;
 }
@@ -169,8 +186,14 @@ button:hover{
 }
 
 .exit > a{
+  text-decoration: none!important;
+  color: unset;
+  text-align: center;
+  width: 100%;
+}
+
+a{
   text-decoration: none;
-  color: white;
 }
 
 .loco > a{
@@ -183,17 +206,35 @@ button:hover{
   text-decoration: underline;
 }
 
+.box2{
+  display: inline-flex;
+  margin-right: 1vw;
+/*  width: 100%;*/
+/*  justify-content: space-between;*/
+  float: right;
+}
+
 .exit{
   font-size: 3vw;
   background-color: red;
-  padding:  0.1vw;
+  padding:  0.2vw;
+  margin: 1vw;
   color: white;
+  text-align: center!important;
   border: 1px solid white;
+  display: block;
+  text-decoration: none!important;
+  margin-bottom: 0;
 }
 
 .exit > a:hover{
   background-color: white;
   color: red;
+}
+
+.exit:hover{
+  background-color: white;
+  color: red!important;
 }
 
 .location{
@@ -223,7 +264,7 @@ img:hover{
 
 .path{
   width: 7.25vw;
-  height: 17.5vh;
+  height: 20vh;
   margin-left: 1.25vw;
   margin-right: 1.75vw;
 /*  display: flex;*/
@@ -247,19 +288,25 @@ img:hover{
 }
 
 
-@media only screen and (max-width: 1000px){
+
+@media only screen and (max-width: 900px){
   body{
-    margin-top: 34vh;
+    margin-top: 54vh;
+  }
+
+  .circle{
+    margin-right: 2vw;
   }
   .btn{
     margin-bottom: 1vh;
-    font-size: 4.75;
-    margin-right: -.75vw;
+    font-size: 4.5vw;
+    margin-right: vw;
+    padding: 2vw;
   }
   .path{
   width: 8.5vw;
-  height: 23vh;
-  margin-bottom: -3vh;
+  height: 44vh;
+  margin-bottom: -10vh;
   margin-left: 1.75vw;
   margin-right: 3vw;
 }
@@ -269,17 +316,17 @@ img:hover{
     margin-right: 2vw;
   }
   .text{
-    font-size: 6vw;
+    font-size: 6.5vw;
     margin-right: 1vw;
   }
   .exit{
-  font-size: 3.75vw;
+  font-size: 7vw;
 
   }
   .lines{
-    font-size: 3.5vw;
+    font-size: 5vw;
     margin-top:vh;
-    padding: 3vw;
+    padding: 5vw;
     width: ;
   }
 
@@ -290,11 +337,11 @@ img:hover{
   padding-top: 3%;
 }
 .container{
-  margin-bottom: 2vh;
   margin-right: 1vw;
 }
 img{
   width: 7vh;
+  margin-right: 2vw;
 }
 .header{
   padding-bottom: 1vh;
@@ -306,45 +353,117 @@ img{
   width: 100%;
 }
 .name{
-    font-size: 5.5vw;
-    width: 80%;
+    font-size: 6vw;
+    width: 90%;
+    margin-bottom: 1vh;
   }
 .path:before{
-  top: 25%;
+  top: 13.5%;
 }
 .street{
   flex-wrap: wrap;
-  width: 75%;
+  width: 100%;
 }
 .lines>a{
   text-decoration: none;
 }
-/*.path:last-child {
-  height: 14vh;
-}*/
+
+.boxcontent {
+    display: flex;
+    align-items: flex-start;
+  }
+
+  img {
+    margin-top: 1.5vh;
+    margin-bottom: 0;
+  }
 }
 
 
-@media only screen and (max-width: 700px){
+
+@media only screen and (max-width: 800px){
+
+  .header{
+    margin-top: 1vh;
+  }
+
   body{
-    margin-top: 32vh;
+    margin-top: 56vh;
+
   }
+
+img{
+  width: 5vh;
+  margin-right: 2vw;
+}
+  .box2{
+    margin-right: -7vw;
+  }
+
   .btn{
-    font-size: 4.75vw;
-    padding: 1.25vw;
-    width: 25px;
-    height: 25px;
-    margin-bottom: 1vh;
+    font-size: 5.5vw;
+    padding: 2vw;
+    width: 26px;
+    height: 26px;
   }
+
+.lines{
+  margin: 1vw;
+}
 
   .path{
   width: 8.5vw;
-  height: 22vh;
-  margin-bottom: -2.5vh;
+  height: 45vh;
   margin-left: 1.75vw;
   margin-right: 3vw;
+  margin-bottom: ;
 }
 
+.path:before{
+  top: 20%;
+}
+
+.filters{
+      width:  85%;
+      margin-right: -6vw;
+}
+
+.exit{
+  margin-bottom: 1.5vh;
+}
+.container-wrapper {
+  display: flex;
+  margin-right: 1vw;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 3vh; /* Adjust the top margin here */
+}
+
+.container {
+  align-items: center;
+  border: 1px solid white;
+  margin-bottom: 3vh;
+}
+.name{
+  white-space: normal;
+  width: 85%;
+}
+
+}
+
+@media only screen and (max-width: 450px){
+  body{
+    margin-top: 44vh;
+  }
+
+  .path{
+    height: 36vh;
+  }
+
+  .container{
+    margin-bottom: 3vh;
+  }
 }
 
 
