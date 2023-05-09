@@ -32,7 +32,7 @@ body{
   color: var(--color);
   background-color: white;
   height: 100%;
-}
+} 
 
 .near > img{
   transform: rotate(90deg);
@@ -361,8 +361,6 @@ img:hover{
 }
 
 
-
-
   .exit{
   font-size: 7vw;
 
@@ -531,5 +529,9 @@ img{
     margin-top: 3vh;
     margin-bottom: 4vh;
   }
+
+  .path:before{
+  top: 22%;
+}
 }
 

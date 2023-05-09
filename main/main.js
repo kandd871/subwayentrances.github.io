@@ -20,6 +20,9 @@ array.forEach((item, index) => {
     circle.style.backgroundColor = colorMap[item];
     circle.style.color = "white";
     circle.style.border = "none";
+    if (colorMap[item] === "#FFDA16") {
+    circle.style.color = "black";
+  }
   });
 
   // create anchor tag and append the circle to it

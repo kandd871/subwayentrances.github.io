@@ -12,7 +12,39 @@ body{
   text-align: left;
   color: white;
 }
+.gap{
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  font-size: 2vw;
+  margin-bottom: 6vh;
+  border: 1px solid white;
+/*  margin-right: 2vw;
+  margin-left: 2vw;*/
+  align-items: center;
+  height: 100%;
+  padding-left: 3vw;
+  padding-right: 3vw;
+  padding-top: 0.5vh;
+  padding-bottom: 0.5vh;
+  color: var(--color);
+  background-color: white;
+  height: 100%;
+} 
 
+.near > img{
+  transform: rotate(90deg);
+  background-color: var(--color);
+  padding: 1.5vh;
+  padding-left: 1.75vh;
+  padding-right: 1.75vh;
+  margin-right: -.25vh;
+  border-radius: 100%;
+}
+
+.near > img:hover{
+  transform: rotate(0deg);
+}
 
 .header{
    margin-top: 0 !important;
@@ -379,6 +411,11 @@ img{
     margin-top: 1.5vh;
     margin-bottom: 0;
   }
+    
+  .gap{
+  font-size: 5vw;
+  text-align: left;
+}
 }
 
 
@@ -451,7 +488,18 @@ img{
   white-space: normal;
   width: 85%;
 }
+.gap{
+    margin-top: -3vh;
+    margin-bottom: 4vh;
+  }
+
+  .gap>a{
+    margin-left: 3vw;
+  }
+
 }
+
+
 
 @media only screen and (max-width: 450px){
   body{
@@ -465,6 +513,21 @@ img{
   .container{
     margin-bottom: 3vh;
   }
+
 }
 
+@media only screen and (max-width: 400px){
+  body{
+    margin-top: 49vh;
+  }
+
+  .gap{
+    font-size: 5.5vw;
+    margin-top: 3vh;
+    margin-bottom: 4vh;
+  }
+
+  .path:before{
+  top: 22%;
+}
 

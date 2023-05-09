@@ -194,8 +194,62 @@ buttons.forEach(button => {
       }
     });
   });
+navigator.geolocation.getCurrentPosition((position) => {
+  const userLat = position.coords.latitude;
+  const userLng = position.coords.longitude;
+
+  // Add your code here to calculate the distance between the user's location and the entrances' locations
+
+modifiedJson.forEach((entrance) => {
+  // Skip entrance lines that don't contain the number 3 in their name
+
+  const entranceLat = entrance.the_geom.coordinates[1];
+  const entranceLng = entrance.the_geom.coordinates[0];
+  function deg2rad(degrees) {
+    return degrees * Math.PI / 180;
+  }
+  // Calculate the distance between the user's location and the entrance's location using the Haversine formula
+  const R = 6371; // Radius of the earth in km
+  const dLat = deg2rad(entranceLat - userLat);
+  const dLng = deg2rad(entranceLng - userLng);
+  const a =
+    Math.sin(dLat / 2) * Math.sin(dLat / 2) +
+    Math.cos(deg2rad(userLat)) *
+      Math.cos(deg2rad(entranceLat)) *
+      Math.sin(dLng / 2) *
+      Math.sin(dLng / 2);
+  const c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));
+  const distance = R * c; // Distance in km
+
+  // Store the distance in the entrance object
+  entrance.distance = distance;
 });
 
+// Filter out entrances that don't contain the number 3 in their name
+  const entrancesWith3 = modifiedJson.filter((entrance) =>
+  entrance.line.includes("3")
+);
 
+
+// Sort the entrances by distance in ascending order
+entrancesWith3.sort((a, b) => a.distance - b.distance);
+
+// Get the closest entrance
+const closestEntrance = entrancesWith3[0];
+
+// Display the closest entrance in the console
+console.log(`You are closest to ${closestEntrance.name}.`);
+
+const firstValue = closestEntrance.the_geom.coordinates[0]; // access coordinates array of the entrance object
+const secondValue = closestEntrance.the_geom.coordinates[1]; // access coordinates array of the entrance object
+
+const gap = document.querySelector('.gap');
+gap.innerHTML = `The closest entrance to you is ${closestEntrance.name}. <a class="near" target="_blank" href="https://www.google.com/maps/search/${secondValue},+${firstValue}"><img class="near" src="arrow.png"></a>`;
+
+});
   });
+  });
+
+
+
 
