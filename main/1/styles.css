@@ -14,6 +14,41 @@ body{
 }
 
 
+.gap{
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  font-size: 2vw;
+  margin-bottom: 6vh;
+  border: 1px solid white;
+  margin-right: 2vw;
+  margin-left: 2vw;
+  align-items: center;
+  height: 100%;
+  padding-left: 1vw;
+  padding-right: 1vw;
+  padding-top: 0.5vh;
+  padding-bottom: 0.5vh;
+  color: var(--color);
+  background-color: white;
+  height: 100%;
+}
+
+.near > img{
+  transform: rotate(90deg);
+  background-color: var(--color);
+  padding: 1.5vh;
+  padding-left: 1.75vh;
+  padding-right: 1.75vh;
+  margin-right: -.25vh;
+  border-radius: 100%;
+}
+
+.near > img:hover{
+  transform: rotate(0deg);
+}
+
+
 .header{
    margin-top: 0 !important;
  position: fixed; 
@@ -319,6 +354,13 @@ img:hover{
     font-size: 6.5vw;
     margin-right: 1vw;
   }
+
+  .gap{
+  font-size: 5vw;
+  text-align: left;
+}
+
+
   .exit{
   font-size: 7vw;
 
@@ -452,6 +494,8 @@ img{
 
 }
 
+
+
 @media only screen and (max-width: 450px){
   body{
     margin-top: 44vh;
@@ -468,7 +512,7 @@ img{
 
 @media only screen and (max-width: 400px){
   body{
-    margin-top: 50vh;
+    margin-top: 49vh;
   }
 }
 
