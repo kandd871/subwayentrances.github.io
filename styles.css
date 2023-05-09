@@ -157,11 +157,11 @@ to{
 @media only screen and (max-width: 450px){
 	body{
 		margin-top: 50vh;
-		font-size:  8vw;
+		font-size:  8.5vw;
 		line-height: 7vh;
 	}
 	#img{
-		margin-top: 9vh;
+		margin-top: 7vh;
 		margin-right:auto;
 		margin-left: 5vw;
 		text-align: left;
@@ -179,6 +179,12 @@ to{
 	}
 }
 
+@media only screen and (max-width: 400px){
+	body{
+		margin-top: 47vh;
+		line-height: 8vh;
+	}
+}
 
 
 
