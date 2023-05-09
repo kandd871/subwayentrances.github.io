@@ -361,6 +361,8 @@ img:hover{
 }
 
 
+
+
   .exit{
   font-size: 7vw;
 
@@ -513,6 +515,11 @@ img{
 @media only screen and (max-width: 400px){
   body{
     margin-top: 49vh;
+  }
+
+  .gap{
+    margin-top: 2vh;
+    margin-bottom: 4vh;
   }
 }
 
