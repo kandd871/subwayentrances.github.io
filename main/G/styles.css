@@ -15,7 +15,7 @@ body{
 .gap{
   display: flex;
   justify-content: space-between;
-  text-align: center;
+  text-align: left;
   font-size: 2vw;
   margin-bottom: 6vh;
   border: 1px solid white;
