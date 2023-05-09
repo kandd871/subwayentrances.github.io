@@ -62,6 +62,7 @@ img:hover{
 	}
 }
 
+
 @media only screen and (max-width: 900px){
 	body{
 		margin-top: 44vh;
@@ -92,6 +93,66 @@ to{
 }
 }
 
+@media only screen and (max-width: 1000px){
+	.title{
+		margin-bottom: -20vh;
+		font-size: 15vw;
+	}
+}
+
+@media only screen and (max-height: 800px){
+	body{
+		line-height: 28vh;
+		margin-top: -10vh;
+	}
+}
+
+
+@media only screen and (max-height: 750px){
+	body{
+		line-height: 26.5vh;
+		margin-top: -6vh;
+		font-size:  6.5vw;
+	}
+	img{
+		width: 16%;
+	}
+}
+
+@media only screen and (max-height: 700px){
+	body{
+		line-height: 11vh;
+		margin-top: 20vh;
+		font-size:  8vw;
+	}
+}
+
+@media only screen and (max-width: 500px){
+	body{
+		margin-top: 45vh;
+		font-size:  8vw;
+		line-height: 11vh;
+	}
+	#img{
+		margin-top: 12vh;
+		margin-right:auto;
+		margin-left: 5vw;
+		text-align: left;
+		justify-content: left;
+	}
+	img{
+		width: 35%;
+	}
+	.title{
+		margin-bottom: -8vh;
+	}
+	.circle{
+	width: 1.1em;
+  height: 1.1em;
+	}
+}
+
+
 
 @media only screen and (max-width: 450px){
 	body{
@@ -118,19 +179,8 @@ to{
 	}
 }
 
-@media only screen and (max-height: 800px){
-	body{
-		line-height: 28vh;
-		margin-top: -10vh;
-	}
-}
 
-@media only screen and (max-height: 750px){
-	body{
-		line-height: 11vh;
-		margin-top: 52vh;
-	}
-}
+
 
 
 
