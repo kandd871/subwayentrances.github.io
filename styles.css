@@ -157,7 +157,6 @@ to{
 @media only screen and (max-width: 450px){
 	body{
 		margin-top: 50vh;
-		font-size:  9vw;
 		line-height: 7vh;
 	}
 	#img{
@@ -172,6 +171,7 @@ to{
 	}
 	.title{
 		margin-bottom: -4vh;
+		font-size:  15.75vw;
 	}
 	.circle{
 	width: 1.1em;
@@ -181,7 +181,7 @@ to{
 
 @media only screen and (max-width: 400px){
 	body{
-		margin-top: 46vh;
+		margin-top: 47vh;
 		line-height: 8vh;
 	}
 	.title{
