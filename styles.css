@@ -157,7 +157,7 @@ to{
 @media only screen and (max-width: 450px){
 	body{
 		margin-top: 50vh;
-		font-size:  8.5vw;
+		font-size:  9vw;
 		line-height: 7vh;
 	}
 	#img{
@@ -181,7 +181,7 @@ to{
 
 @media only screen and (max-width: 400px){
 	body{
-		margin-top: 47vh;
+		margin-top: 46vh;
 		line-height: 8vh;
 	}
 	.title{
