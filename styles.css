@@ -5,7 +5,7 @@ body{
 	font-size:  6.75vw;
 	margin-top: -5vh;
 	margin-left: 5vw;
-	line-height: 23vh;
+	line-height: 25vh;
 /*	transition: 10s;*/
 	position: relative;
 }
@@ -37,8 +37,8 @@ img:hover{
 
 .circle {
   display: inline-block;
-  width: 1.05em;
-  height: 1.05em;
+  width: 1.15em;
+  height: 1.15em;
   border-radius: 50%;
   text-align: center;
   vertical-align: center;
@@ -95,7 +95,7 @@ to{
 
 @media only screen and (max-width: 450px){
 	body{
-		margin-top: 55vh;
+		margin-top: 50vh;
 		font-size:  8vw;
 		line-height: 7vh;
 	}
@@ -111,6 +111,24 @@ to{
 	}
 	.title{
 		margin-bottom: -4vh;
+	}
+	.circle{
+	width: 1.1em;
+  height: 1.1em;
+	}
+}
+
+@media only screen and (max-height: 800px){
+	body{
+		line-height: 28vh;
+		margin-top: -10vh;
+	}
+}
+
+@media only screen and (max-height: 750px){
+	body{
+		line-height: 11vh;
+		margin-top: 52vh;
 	}
 }
 
