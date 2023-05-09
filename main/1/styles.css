@@ -493,6 +493,10 @@ img{
   white-space: normal;
   width: 85%;
 }
+  .gap{
+    margin-top: -3vh;
+    margin-bottom: 4vh;
+  }
 
 }
 
@@ -510,6 +514,7 @@ img{
   .container{
     margin-bottom: 3vh;
   }
+
 }
 
 @media only screen and (max-width: 400px){
@@ -518,6 +523,7 @@ img{
   }
 
   .gap{
+    font-size: 5.5vw;
     margin-top: 2vh;
     margin-bottom: 4vh;
   }
